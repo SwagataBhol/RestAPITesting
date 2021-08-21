@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-21T16:02:07 IST" name="Default suite" finished-at="2021-08-21T16:02:22 IST" duration-ms="15175">
+  <suite started-at="2021-08-21T17:13:56 IST" name="Default suite" finished-at="2021-08-21T17:14:12 IST" duration-ms="16246">
     <groups>
     </groups>
-    <test started-at="2021-08-21T16:02:07 IST" name="Default test" finished-at="2021-08-21T16:02:22 IST" duration-ms="15175">
+    <test started-at="2021-08-21T17:13:56 IST" name="Default test" finished-at="2021-08-21T17:14:12 IST" duration-ms="16246">
       <class name="testingRestAPI.testingRestAPI">
-        <test-method signature="ContentCheck()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T16:02:07 IST" name="ContentCheck" finished-at="2021-08-21T16:02:13 IST" duration-ms="6665" status="PASS">
+        <test-method signature="ContentCheck()[pri:0, instance:testingRestAPI.testingRestAPI@696da30b]" started-at="2021-08-21T17:13:56 IST" name="ContentCheck" finished-at="2021-08-21T17:14:02 IST" duration-ms="5854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ContentCheck -->
-        <test-method signature="FetchData()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T16:02:13 IST" name="FetchData" finished-at="2021-08-21T16:02:14 IST" duration-ms="1007" status="PASS">
+        <test-method signature="FetchData()[pri:0, instance:testingRestAPI.testingRestAPI@696da30b]" started-at="2021-08-21T17:14:02 IST" name="FetchData" finished-at="2021-08-21T17:14:03 IST" duration-ms="1004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FetchData -->
-        <test-method signature="IdCheck()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T16:02:14 IST" name="IdCheck" finished-at="2021-08-21T16:02:16 IST" duration-ms="2059" status="PASS">
+        <test-method signature="IdCheck()[pri:0, instance:testingRestAPI.testingRestAPI@696da30b]" started-at="2021-08-21T17:14:03 IST" name="IdCheck" finished-at="2021-08-21T17:14:05 IST" duration-ms="2050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IdCheck -->
-        <test-method signature="closeTask()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T16:02:16 IST" name="closeTask" finished-at="2021-08-21T16:02:17 IST" duration-ms="1010" status="PASS">
+        <test-method signature="Reopentask()[pri:0, instance:testingRestAPI.testingRestAPI@696da30b]" started-at="2021-08-21T17:14:05 IST" name="Reopentask" finished-at="2021-08-21T17:14:06 IST" duration-ms="1308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reopentask -->
+        <test-method signature="UpdateTask()[pri:0, instance:testingRestAPI.testingRestAPI@696da30b]" started-at="2021-08-21T17:14:06 IST" name="UpdateTask" finished-at="2021-08-21T17:14:07 IST" duration-ms="1021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateTask -->
+        <test-method signature="closeTask()[pri:0, instance:testingRestAPI.testingRestAPI@696da30b]" started-at="2021-08-21T17:14:07 IST" name="closeTask" finished-at="2021-08-21T17:14:08 IST" duration-ms="909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTask -->
-        <test-method signature="createTask()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T16:02:17 IST" name="createTask" finished-at="2021-08-21T16:02:19 IST" duration-ms="1114" status="PASS">
+        <test-method signature="createTask()[pri:0, instance:testingRestAPI.testingRestAPI@696da30b]" started-at="2021-08-21T17:14:08 IST" name="createTask" finished-at="2021-08-21T17:14:09 IST" duration-ms="1031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTask -->
-        <test-method signature="getActiveTask()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T16:02:19 IST" name="getActiveTask" finished-at="2021-08-21T16:02:21 IST" duration-ms="2338" status="PASS">
+        <test-method signature="getActiveTask()[pri:0, instance:testingRestAPI.testingRestAPI@696da30b]" started-at="2021-08-21T17:14:09 IST" name="getActiveTask" finished-at="2021-08-21T17:14:11 IST" duration-ms="2094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getActiveTask -->
-        <test-method signature="getInActiveTask()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T16:02:21 IST" name="getInActiveTask" finished-at="2021-08-21T16:02:22 IST" duration-ms="833" status="PASS">
+        <test-method signature="getInActiveTask()[pri:0, instance:testingRestAPI.testingRestAPI@696da30b]" started-at="2021-08-21T17:14:11 IST" name="getInActiveTask" finished-at="2021-08-21T17:14:12 IST" duration-ms="856" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getInActiveTask -->

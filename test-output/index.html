@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +115,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testingRestAPI.testingRestAPI" class="method navigator-link" hash-for-method="IdCheck">IdCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testingRestAPI.testingRestAPI" class="method navigator-link" hash-for-method="Reopentask">Reopentask</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testingRestAPI.testingRestAPI" class="method navigator-link" hash-for-method="UpdateTask">UpdateTask</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -178,6 +188,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="Reopentask">
+                  </a> <!-- Reopentask -->
+                  <span class="method-name">Reopentask</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdateTask">
+                  </a> <!-- UpdateTask -->
+                  <span class="method-name">UpdateTask</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="closeTask">
                   </a> <!-- closeTask -->
                   <span class="method-name">closeTask</span>
@@ -209,7 +233,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-186562473/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--2040203294/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -258,40 +282,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ContentCheck')
 data.setCell(0, 2, 'testingRestAPI.testingRestAPI')
-data.setCell(0, 3, 6665);
+data.setCell(0, 3, 5854);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getActiveTask')
 data.setCell(1, 2, 'testingRestAPI.testingRestAPI')
-data.setCell(1, 3, 2338);
+data.setCell(1, 3, 2094);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'IdCheck')
 data.setCell(2, 2, 'testingRestAPI.testingRestAPI')
-data.setCell(2, 3, 2059);
+data.setCell(2, 3, 2050);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createTask')
+data.setCell(3, 1, 'Reopentask')
 data.setCell(3, 2, 'testingRestAPI.testingRestAPI')
-data.setCell(3, 3, 1114);
+data.setCell(3, 3, 1308);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'closeTask')
+data.setCell(4, 1, 'createTask')
 data.setCell(4, 2, 'testingRestAPI.testingRestAPI')
-data.setCell(4, 3, 1010);
+data.setCell(4, 3, 1031);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'FetchData')
+data.setCell(5, 1, 'UpdateTask')
 data.setCell(5, 2, 'testingRestAPI.testingRestAPI')
-data.setCell(5, 3, 1007);
+data.setCell(5, 3, 1021);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'getInActiveTask')
+data.setCell(6, 1, 'FetchData')
 data.setCell(6, 2, 'testingRestAPI.testingRestAPI')
-data.setCell(6, 3, 833);
+data.setCell(6, 3, 1004);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'closeTask')
+data.setCell(7, 2, 'testingRestAPI.testingRestAPI')
+data.setCell(7, 3, 909);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getInActiveTask')
+data.setCell(8, 2, 'testingRestAPI.testingRestAPI')
+data.setCell(8, 3, 856);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -324,27 +356,35 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">FetchData</span>
-                <span class="method-start">6672 ms</span>
+                <span class="method-start">5867 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">IdCheck</span>
-                <span class="method-start">7687 ms</span>
+                <span class="method-start">6876 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Reopentask</span>
+                <span class="method-start">8931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UpdateTask</span>
+                <span class="method-start">10245 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">closeTask</span>
-                <span class="method-start">9750 ms</span>
+                <span class="method-start">11272 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createTask</span>
-                <span class="method-start">10765 ms</span>
+                <span class="method-start">12187 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getActiveTask</span>
-                <span class="method-start">11885 ms</span>
+                <span class="method-start">13223 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getInActiveTask</span>
-                <span class="method-start">14226 ms</span>
+                <span class="method-start">15323 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

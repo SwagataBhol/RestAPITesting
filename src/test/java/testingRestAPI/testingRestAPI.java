@@ -192,9 +192,45 @@ public class testingRestAPI {
 		int statusCode = response.statusCode();
 		
 		Assert.assertEquals(statusCode , 404 );
-		
 				
 	}
+	@Test
+	
+	public void Reopentask() {
+		
+		RestAssured.baseURI="https://api.todoist.com/rest/v1/tasks";
+		RequestSpecification httpRequest= RestAssured.given();
+		
+		Response response= httpRequest.header("Authorization","Bearer "+token)
+				.header("Content-Type","application/json")
+				.post("/5086966430/reopen");
+		
+		Assert.assertEquals(response.getStatusCode(), 204);
+		
+		
+	}
+	
+	@Test
+	public void UpdateTask() {
+		
+		JSONObject object=new JSONObject();
+		
+		object.put("content", "updated");
+		
+		RestAssured.baseURI="https://api.todoist.com/rest/v1/tasks";
+		
+		RequestSpecification httpRequest= RestAssured.given();
+		
+		Response response=httpRequest.header("Authorization","Bearer "+token)
+										.header("Content-Type","application/json")
+										.body(object.toString())
+										.post("/5086532140");
+								
+		Assert.assertEquals(204,response.getStatusCode());
+		
+		
+	}
+	
 	
 
 }

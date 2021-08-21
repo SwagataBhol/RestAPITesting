@@ -5,7 +5,7 @@
     <classes>
       <class name="testingRestAPI.testingRestAPI">
         <methods>
-          <include name="createTask"/>
+          <include name="UpdateTask"/>
         </methods>
       </class> <!-- testingRestAPI.testingRestAPI -->
     </classes>
