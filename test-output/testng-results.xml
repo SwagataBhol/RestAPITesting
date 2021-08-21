@@ -1,24 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-20T17:30:23 IST" name="Default suite" finished-at="2021-08-20T17:30:28 IST" duration-ms="5332">
+  <suite started-at="2021-08-21T15:39:41 IST" name="Default suite" finished-at="2021-08-21T15:39:56 IST" duration-ms="15539">
     <groups>
     </groups>
-    <test started-at="2021-08-20T17:30:23 IST" name="Default test" finished-at="2021-08-20T17:30:28 IST" duration-ms="5332">
+    <test started-at="2021-08-21T15:39:41 IST" name="Default test" finished-at="2021-08-21T15:39:56 IST" duration-ms="15539">
       <class name="testingRestAPI.testingRestAPI">
-        <test-method signature="ContentCheck()[pri:0, instance:testingRestAPI.testingRestAPI@74455848]" started-at="2021-08-20T17:30:23 IST" name="ContentCheck" finished-at="2021-08-20T17:30:26 IST" duration-ms="2955" status="PASS">
+        <test-method signature="ContentCheck()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T15:39:41 IST" name="ContentCheck" finished-at="2021-08-21T15:39:48 IST" duration-ms="7346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ContentCheck -->
-        <test-method signature="FetchData()[pri:0, instance:testingRestAPI.testingRestAPI@74455848]" started-at="2021-08-20T17:30:26 IST" name="FetchData" finished-at="2021-08-20T17:30:26 IST" duration-ms="751" status="PASS">
+        <test-method signature="FetchData()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T15:39:48 IST" name="FetchData" finished-at="2021-08-21T15:39:49 IST" duration-ms="894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FetchData -->
-        <test-method signature="IdCheck()[pri:0, instance:testingRestAPI.testingRestAPI@74455848]" started-at="2021-08-20T17:30:26 IST" name="IdCheck" finished-at="2021-08-20T17:30:28 IST" duration-ms="1572" status="PASS">
+        <test-method signature="IdCheck()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T15:39:49 IST" name="IdCheck" finished-at="2021-08-21T15:39:51 IST" duration-ms="1959" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IdCheck -->
+        <test-method signature="closeTask()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T15:39:51 IST" name="closeTask" finished-at="2021-08-21T15:39:52 IST" duration-ms="1093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTask -->
+        <test-method signature="createTask()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T15:39:52 IST" name="createTask" finished-at="2021-08-21T15:39:53 IST" duration-ms="915" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<false> but was:<Buy Milk>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<false> but was:<Buy Milk>
+at junit.framework.Assert.fail(Assert.java:57)
+at junit.framework.Assert.failNotEquals(Assert.java:329)
+at junit.framework.Assert.assertEquals(Assert.java:78)
+at junit.framework.Assert.assertEquals(Assert.java:86)
+at testingRestAPI.testingRestAPI.createTask(testingRestAPI.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTask -->
+        <test-method signature="getActiveTask()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T15:39:53 IST" name="getActiveTask" finished-at="2021-08-21T15:39:55 IST" duration-ms="2271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getActiveTask -->
+        <test-method signature="getInActiveTask()[pri:0, instance:testingRestAPI.testingRestAPI@c333c60]" started-at="2021-08-21T15:39:55 IST" name="getInActiveTask" finished-at="2021-08-21T15:39:56 IST" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInActiveTask -->
       </class> <!-- testingRestAPI.testingRestAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

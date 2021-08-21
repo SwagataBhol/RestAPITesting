@@ -5,7 +5,7 @@
     <classes>
       <class name="testingRestAPI.testingRestAPI">
         <methods>
-          <include name="IdCheck"/>
+          <include name="createTask"/>
         </methods>
       </class> <!-- testingRestAPI.testingRestAPI -->
     </classes>
