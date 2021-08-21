@@ -9,49 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">15,539</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,175</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testingRestAPI.testingRestAPI</td><td><a href="#m0">createTask</a></td><td rowspan="1">1629540592597</td><td rowspan="1">915</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">testingRestAPI.testingRestAPI</td><td><a href="#m1">ContentCheck</a></td><td rowspan="1">1629540581284</td><td rowspan="1">7346</td></tr><tr class="passedeven"><td><a href="#m2">FetchData</a></td><td rowspan="1">1629540588634</td><td rowspan="1">894</td></tr><tr class="passedeven"><td><a href="#m3">IdCheck</a></td><td rowspan="1">1629540589534</td><td rowspan="1">1959</td></tr><tr class="passedeven"><td><a href="#m4">closeTask</a></td><td rowspan="1">1629540591500</td><td rowspan="1">1093</td></tr><tr class="passedeven"><td><a href="#m5">getActiveTask</a></td><td rowspan="1">1629540593521</td><td rowspan="1">2271</td></tr><tr class="passedeven"><td><a href="#m6">getInActiveTask</a></td><td rowspan="1">1629540595795</td><td rowspan="1">896</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">testingRestAPI.testingRestAPI</td><td><a href="#m0">ContentCheck</a></td><td rowspan="1">1629541927175</td><td rowspan="1">6665</td></tr><tr class="passedeven"><td><a href="#m1">FetchData</a></td><td rowspan="1">1629541933847</td><td rowspan="1">1007</td></tr><tr class="passedeven"><td><a href="#m2">IdCheck</a></td><td rowspan="1">1629541934862</td><td rowspan="1">2059</td></tr><tr class="passedeven"><td><a href="#m3">closeTask</a></td><td rowspan="1">1629541936925</td><td rowspan="1">1010</td></tr><tr class="passedeven"><td><a href="#m4">createTask</a></td><td rowspan="1">1629541937940</td><td rowspan="1">1114</td></tr><tr class="passedeven"><td><a href="#m5">getActiveTask</a></td><td rowspan="1">1629541939060</td><td rowspan="1">2338</td></tr><tr class="passedeven"><td><a href="#m6">getInActiveTask</a></td><td rowspan="1">1629541941401</td><td rowspan="1">833</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testingRestAPI.testingRestAPI#createTask</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;Buy Milk&gt;
-	at junit.framework.Assert.fail(Assert.java:57)
-	at junit.framework.Assert.failNotEquals(Assert.java:329)
-	at junit.framework.Assert.assertEquals(Assert.java:78)
-	at junit.framework.Assert.assertEquals(Assert.java:86)
-	at testingRestAPI.testingRestAPI.createTask(testingRestAPI.java:39)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testingRestAPI.testingRestAPI#ContentCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testingRestAPI.testingRestAPI#FetchData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testingRestAPI.testingRestAPI#IdCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testingRestAPI.testingRestAPI#closeTask</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">testingRestAPI.testingRestAPI#ContentCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testingRestAPI.testingRestAPI#FetchData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testingRestAPI.testingRestAPI#IdCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testingRestAPI.testingRestAPI#closeTask</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testingRestAPI.testingRestAPI#createTask</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">testingRestAPI.testingRestAPI#getActiveTask</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m6">testingRestAPI.testingRestAPI#getInActiveTask</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

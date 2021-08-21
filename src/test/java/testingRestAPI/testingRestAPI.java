@@ -25,19 +25,20 @@ public class testingRestAPI {
 		object.put("due_lang", "en");
 		object.put( "priority", 4);
 		
-		RestAssured.baseURI = "https://api.todoist.com/rest/v1/tasks";
+		RestAssured.baseURI = "https://api.todoist.com/rest/v1";
 		RequestSpecification httpRequest = RestAssured.given();
 		
 		Response response = httpRequest.header("Authorization","Bearer "+token)
 				.header("Content-Type","application/json")
-				.put("https://api.todoist.com/rest/v1/tasks");
+				.body(object.toString())
+				.post("/tasks");
+				
 		
 		String responseBody = response.getBody().asString();
 		
 		System.out.println(response.getStatusCode());
 		Assert.assertEquals(response.getStatusCode(),200);
-		Assert.assertEquals(responseBody.contains("content"),"Buy Milk");
-		
+		Assert.assertEquals(responseBody.contains("content"),true);	
 		
 	}
 	@Test
